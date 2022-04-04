@@ -1,9 +1,11 @@
-# StyleGAN encoder for image-to-image translation
+# Projective Geometry
 
-This is the repository of the project proposed for the course of *Vision and Perception*.
+This is the repository folder with the second homework proposed for the course of *Vision and Perception*.
 
-This work is centered on the idea of developing the generic **pixel2style2pixel(pSp)** framework presented in the paper [Richardson et al, **"Encoding in Style: a StyleGAN Encoder for Image-to-Image Translation,"** (IROS 2016)](https://arxiv.org/abs/2008.00951) and aplicable  on a large variety of **image-to-image translation** tasks. It is implemented in Tensorflow.
+It contains solutions of four exercises intended to master skills in Projective Geometry. Task assignment for the first three of them can be found in [tast_assignment_ex1_ex2_ex3.pdf](), and the fourth one is formulated as following: "Implement in COLAB the example 8.18 on the calibration with the absolute conic given in the [book of Hartley and Zisserman Multi View Geometry]()."
 
-## Authors
+The commented in a detailed way code implementation of the solution is provided in [projective_geometry.ipynb]().
+
+## Author
 - Olga Sorokoletova - 1937430
-- Amila Sikalo - 1938032
+

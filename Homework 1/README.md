@@ -1,6 +1,6 @@
 # Image Processing
 
-This is the repository of the first homework proposed for the course of *Vision and Perception*.
+This is the repository folder with the first homework proposed for the course of *Vision and Perception*.
 
 It contains solutions of four assignments intended to master skills in Image Processing:
 1. **Feature Detection and Description**
