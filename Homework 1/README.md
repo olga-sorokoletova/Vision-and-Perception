@@ -113,6 +113,7 @@ ___
   <img src="./images/texture_gradients_2.png" width="1164" height="222"/>
 </p>
 
+<<<<<<< HEAD
 ## Assignment 4: Lower Resolution
 
 ### Task Assignment
@@ -142,6 +143,7 @@ ___
 <p align="center">
   <img src="./images/mipmap.png" width="376" height="307"/>
 </p>
+
 
 ## Author
 
