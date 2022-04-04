@@ -65,7 +65,19 @@ ___
 
 ### Results
 
+1. **Image Segmentation with Watershed Algorithm** for the given images is shown below and can be also found in the [```segmentation_and_optical_flow.ipynb```](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/scripts/segmentation_and_optical_flow.ipynb).
+
+<p align="center">
+  <img src="./images/segmentation.png" width="887" height="305"/>
+</p>
+
 **Limits and Strengths of Watershed Algorithm:** Watershed is the most simple and intuitive in usage method. Furthermore, it is fast and computationally efficient. Is able to provide closed contours and produce a complete division of the image in separated regions. The main drawback is that it gives an over-segmented (over-segmentation refers to the over-cutting) result considering noise or any other irregularities in the image that are common for all applications. This means that fragments of the interest might be omitted from the segmentation result. From the another side, under-segmentation (leaking) also occurs.
+
+2. **Dense Optical Flow** for the given images **(Frame 1 -> Frame 2 and Frame 2 -> Frame 3)** is shown below and can be also found in the [```segmentation_and_optical_flow.ipynb```](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/scripts/segmentation_and_optical_flow.ipynb).
+
+<p align="center">
+  <img src="./images/optical_flow.png" width="533" height="263"/>
+</p>
 
 **Flow:** Triangle is moving to the center, square is diverging to the borders.
 
