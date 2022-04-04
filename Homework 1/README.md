@@ -5,7 +5,7 @@ This is the repository of the first homework proposed for the course of *Vision 
 It contains solutions of four assignments intended to master skills in Image Processing:
 1. **Feature Detection and Description**
 2. **Segmentation and Optical Flow**
-3.
+3. **Texture Gradients**
 4.
 
 Code implementations (in Python) for all of them are collected in the [scripts](https://github.com/olga-sorokoletova/Vision-and-Perception/tree/main/Homework%201/scripts) folder.
@@ -80,6 +80,9 @@ ___
 </p>
 
 **Flow:** Triangle is moving to the center, square is diverging to the borders.
+
+## Assignment 3: Texture Gradients
+
 
 ## Author
 
