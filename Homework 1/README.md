@@ -51,7 +51,7 @@ performance of the methods.
 
 ### Task Assignment
 
-Write a code to **segment simple shapes** (the images are given: [1](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/images/im1_11.jpg), [2](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/images/im2_11.jpg), [3](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/images/im3_11.jpg)) showing the reasoning behind your choices. Discuss the limits and strengths of your proposed approach. Then exploiting **the Optical Flow algorithm** on the given images, define which object that you segment with the previous code is moving to the center and which is diverging to the borders. Discuss and report the estimated optical flow usage.
+Write a code to **segment simple shapes** (the images are given: [im1](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/images/im1_11.jpg), [im2](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/images/im2_11.jpg), [im3](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/images/im3_11.jpg)) showing the reasoning behind your choices. Discuss the limits and strengths of your proposed approach. Then exploiting **the Optical Flow algorithm** on the given images, define which object that you segment with the previous code is moving to the center and which is diverging to the borders. Discuss and report the estimated optical flow usage.
 ___
 
 ### Implementation
