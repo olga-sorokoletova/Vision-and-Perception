@@ -54,6 +54,20 @@ performance of the methods.
 Write a code to **segment simple shapes** (the images are given: [1](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/images/im1_11.jpg), [2](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/images/im2_11.jpg), [3](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/images/im3_11.jpg)) showing the reasoning behind your choices. Discuss the limits and strengths of your proposed approach. Then exploiting **the Optical Flow algorithm** on the given images, define which object that you segment with the previous code is moving to the center and which is diverging to the borders. Discuss and report the estimated optical flow usage.
 ___
 
+### Implementation
+
+**Code:** [```segmentation_and_optical_flow.ipynb```](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/scripts/segmentation_and_optical_flow.ipynb)
+
+**Watershed Algorithm:** Marker-based image segmentation using Watershed algorithm has been chosen. The given images are represented in a gray-scale. Meanwhile, any gray-scale image can be viewed as a topographic surface where high intensity denotes peaks and hills while low intensity denotes valleys. If we flood this surface from its minimum and prevent the merging of the waters coming from different sources, we partition the image into two different sets: the catchment basins and the watershed lines. Hence, this methods is suitable for the simple geometric forms segmentation.
+
+**Optical Flow:** Optical Flow arises from the relative motion of objects and the viewer. In this assignment Gunnar Farneback algorithm to determine Dense Optical Flow in a set of three images (frames) has been implemented. Algorithm uses a mask to combine calculated Optical Flow and original images. HSV color format is considered. Then, hue indicates the direction in which the object is moving, and the value indicates how fast it is going. Hue and value are set according to magnitude and angle. Parameters are chosen using some optimization suggestions form the ```cv2.calcOpticalFlowFarneback()``` documentation.
+___
+
+### Results
+
+**Limits and Strengths of Watershed Algorithm:** Watershed is the most simple and intuitive in usage method. Furthermore, it is fast and computationally efficient. Is able to provide closed contours and produce a complete division of the image in separated regions. The main drawback is that it gives an over-segmented (over-segmentation refers to the over-cutting) result considering noise or any other irregularities in the image that are common for all applications. This means that fragments of the interest might be omitted from the segmentation result. From the another side, under-segmentation (leaking) also occurs.
+
+**Flow:** Triangle is moving to the center, square is diverging to the borders.
 
 ## Author
 
