@@ -103,7 +103,15 @@ ___
 
 1. Results of the apllication of the filters for the [**im1**](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/images/im1_12.jpg) are shown below and can be also found in the [```texture_gradients.ipynb```](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/scripts/texture_gradients.ipynb). **Combined Sobel** has the best performance by highlighting both horizontal and vertical patterns.
 
+<p align="center">
+  <img src="./images/texture_gradients_1.png" width="1164" height="222"/>
+</p>
+
 2. Results of the apllication of the filters for the [**im2**](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/images/im2_12.jpg) are shown below and can be also found in the [```texture_gradients.ipynb```](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/scripts/texture_gradients.ipynb). The image is noisier, and Sobel starts to react weaker than **Laplacian**.
+
+<p align="center">
+  <img src="./images/texture_gradients_2.png" width="1164" height="222"/>
+</p>
 
 ## Author
 
