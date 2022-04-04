@@ -83,6 +83,27 @@ ___
 
 ## Assignment 3: Texture Gradients
 
+### Task Assignment
+
+Taking two given images ([im1](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/images/im1_12.jpg), [im2](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/images/im2_12.jpg)), **compute and discuss the Texture Gradients**. Which filters perform better on which effects?
+___
+
+### Implementation
+
+**Code:** [```texture_gradients.ipynb```](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/scripts/texture_gradients.ipynb)
+
+**Filters:** Vertical/Horizontal/Combined Sobel and Laplacian of Gaussian filters were used to compute gradients (second derivatives in the case of Laplacian). 
+
+**Sobel:** Sobel is the operator which consists on the pair of 3×3 convolution kernels. Convolution is done by moving the kernel across the frame one pixel at time. This is fast to compute and usually is used to detect the thicker edges only (horizontal and vertical gradients). Sobel Filter cannot detect the diagonal edges. Kernels are designed to respond maximally while running vertically and horizontally along the pixel grid. In other cases 0 is taken to show the maximum contrast from black to white. The Sobel operator performs a 2D spatial gradient measurement on an image and emphasizes regions of high spatial frequency that correspond to edges. Typically, it is used to find the approximate absolute gradient magnitude at each point in an input gray-scale image. 
+
+**Laplacian:** A Laplacian filter is an edge detector used to compute the second derivatives of an image, measuring the rate at which the first derivatives change. The Laplacian is often applied to an image that has been smoothed with something approximating a Gaussian smoothing filter in order to reduce its sensitivity to noise. The operator normally takes a single grey-level image as input and produces another grey-level image as output.
+___
+
+### Results
+
+1. Results of the apllication of the filters for the [**im1**](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/images/im1_12.jpg) are shown below and can be also found in the [```texture_gradients.ipynb```](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/scripts/texture_gradients.ipynb). **Combined Sobel** has the best performance by highlighting both horizontal and vertical patterns.
+
+2. Results of the apllication of the filters for the [**im2**](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/images/im2_12.jpg) are shown below and can be also found in the [```texture_gradients.ipynb```](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/scripts/texture_gradients.ipynb). The image is noisier, and Sobel starts to react weaker than **Laplacian**.
 
 ## Author
 
