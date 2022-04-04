@@ -6,7 +6,7 @@ It contains solutions of four assignments intended to master skills in Image Pro
 1. **Feature Detection and Description**
 2. **Segmentation and Optical Flow**
 3. **Texture Gradients**
-4.
+4. **Lower Resolution**
 
 Code implementations (in Python) for all of them are collected in the [scripts](https://github.com/olga-sorokoletova/Vision-and-Perception/tree/main/Homework%201/scripts) folder.
 
@@ -103,7 +103,45 @@ ___
 
 1. Results of the apllication of the filters for the [**im1**](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/images/im1_12.jpg) are shown below and can be also found in the [```texture_gradients.ipynb```](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/scripts/texture_gradients.ipynb). **Combined Sobel** has the best performance by highlighting both horizontal and vertical patterns.
 
+<p align="center">
+  <img src="./images/texture_gradients_1.png" width="1164" height="222"/>
+</p>
+
 2. Results of the apllication of the filters for the [**im2**](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/images/im2_12.jpg) are shown below and can be also found in the [```texture_gradients.ipynb```](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/scripts/texture_gradients.ipynb). The image is noisier, and Sobel starts to react weaker than **Laplacian**.
+
+<p align="center">
+  <img src="./images/texture_gradients_2.png" width="1164" height="222"/>
+</p>
+
+## Assignment 4: Lower Resolution
+
+### Task Assignment
+
+Discuss and implement at least two algorithms to **decrease the size** of an image with a minimum content loss.
+___
+
+### Implementation
+
+**Code:** [```lower_resolution.ipynb```](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/scripts/lower_resolution.ipynb)
+
+**Algorithm 1:** Gaussian Pyramid - a technique in Image Processing that breaks down an image into successively smaller groups of pixels to blur it.
+
+**Algorithm 2:** MIPMAP - a sequence of textures, each of which is a progressively lower resolution representation of the same image.
+___
+
+### Results
+
+1. **Gaussian Pyramid** for the [**apple**](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/images/apple.png) image is shown below and can be also found in the [```lower_resolution.ipynb```](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/scripts/lower_resolution.ipynb).
+
+<p align="center">
+  <img src="./images/pyramid.png" width="383" height="250"/>
+</p>
+
+2. **MIPMAP** for the [**apple**](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/images/apple.png) image is shown below and can be also found in the [```lower_resolution.ipynb```](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/scripts/lower_resolution.ipynb). Image quality is improved by countering the aliasing that is caused by the under-sampling of textures that do not use mipmapping.
+
+<p align="center">
+  <img src="./images/mipmap.png" width="376" height="307"/>
+</p>
 
 ## Author
 
