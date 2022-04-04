@@ -113,7 +113,6 @@ ___
   <img src="./images/texture_gradients_2.png" width="1164" height="222"/>
 </p>
 
-<<<<<<< HEAD
 ## Assignment 4: Lower Resolution
 
 ### Task Assignment
@@ -135,13 +134,13 @@ ___
 1. **Gaussian Pyramid** for the [**apple**](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/images/apple.png) image is shown below and can be also found in the [```lower_resolution.ipynb```](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/scripts/lower_resolution.ipynb).
 
 <p align="center">
-  <img src="./images/pyramid.png" width="383" height="250"/>
+  <img src="./images/pyramid.png" width="374" height="208"/>
 </p>
 
 2. **MIPMAP** for the [**apple**](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/images/apple.png) image is shown below and can be also found in the [```lower_resolution.ipynb```](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/scripts/lower_resolution.ipynb). Image quality is improved by countering the aliasing that is caused by the under-sampling of textures that do not use mipmapping.
 
 <p align="center">
-  <img src="./images/mipmap.png" width="376" height="307"/>
+  <img src="./images/mipmap.png" width="361" height="252"/>
 </p>
 
 
