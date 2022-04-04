@@ -4,7 +4,7 @@ This is the repository of the first homework proposed for the course of *Vision 
 
 It contains solutions of four assignments intended to master skills in Image Processing:
 1. **Feature Detection and Description**
-2.
+2. **Segmentation and Optical Flow**
 3.
 4.
 
@@ -46,6 +46,14 @@ performance of the methods.
 **Confusion Matrices:** Harris stably is able to recognize at some level ```cities``` and ```faces```, doing some work on the recognizing of the ```offices``` and ```house buildings```, but is not able to tell anything about some other classes. In particular, it has problems with images, semantics of which is not well-defined by the corners, e.g. ```sea``` or ```green```, or with images, for which corner features are not that useful for distinguishing because of similarity of the corner patterns between the classes, e.g. ```house indoor``` has approximately equal probabilities to be identified as ```house indoor```, ```city```, ```office``` or ```house building```. But ```house indoor``` is a problematic category for all of the three algorithms and further work should focused on this aspect. In other categories, both BRISK and SIFT keep more uniform distribution of guesses, but it is noticeable that SIFT performs generally better, and the reason is seen on the sampled image: BRISK tends to ignore border areas of an image. 
 
 **Properties:** Both BRISK and SIFT are invariant to the translation, but BRISK performs better for view point change. SIFT is robust to shifts/translations/any spatial modifications and performs the best on the given dataset, but precise investigation of the SIFT’s results on the sampled images shows a weak ability to handle orientation and illumination.
+
+## Assignment 2: Segmentation and Optical Flow
+
+### Task Assignment
+
+Write a code to **segment simple shapes** (the images are given: [1](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/images/im1_11.jpg), [2](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/images/im2_11.jpg), [3](https://github.com/olga-sorokoletova/Vision-and-Perception/blob/main/Homework%201/images/im3_11.jpg)) showing the reasoning behind your choices. Discuss the limits and strengths of your proposed approach. Then exploiting **the Optical Flow algorithm** on the given images, define which object that you segment with the previous code is moving to the center and which is diverging to the borders. Discuss and report the estimated optical flow usage.
+___
+
 
 ## Author
 
