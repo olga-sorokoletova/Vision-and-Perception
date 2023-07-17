@@ -10,9 +10,15 @@ Given an input image, **x**, the output of the model is defined as:
 
 $$pSp(\mathbf{x}) := G(E(\mathbf{x}) + \mathbf{\bar{w}})$$
 
-where $E(·)$ and $G(·)$ denote the novel pSp encoder with a FPN architecture that generates style vectors directly in extended latent space $\mathit{W}+$ and a pretrained StyleGAN generator, respectively.
+where $E(·)$ and $G(·)$ denote the novel pSp encoder with a FPN architecture that generates style vectors directly in extended latent space $\mathit{W}+$ and a pretrained StyleGAN generator, respectively. The encoder aims to learn the latent code with respect to the average style vector $\mathbf{\bar{w}}$.
 
-The complete architecture is illustrated in image below.
+The complete architecture is illustrated in image below:
+
+<p align="center">
+  <img src="./materials/stylegan_encoder_vision_and_perception_project.png" width="768" height="303"/>
+</p>
+
+
 
 ## Authors
 - Olga Sorokoletova - 1937430
